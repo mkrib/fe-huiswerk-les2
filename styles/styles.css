@@ -1,3 +1,11 @@
+/*grijs #899CA0*/
+/*donkergroen #1C2B32*/
+
+.dev {
+    border: 2px solid red;
+}
+
+
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
@@ -9,19 +17,38 @@ Table of Contents:
         3.4 Faq
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding 0;
+}
 
 
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
+main {
+    max-width: 1000px;
+    margin: 20px 50px;
+}
 
+button {
+    color: #FFF;
+    background-color: black;
+    border: none;
+}
 
+h2 {
+    text-align: center;
+    font-weight: bolder;
+}
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
-
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
 
 /*////////////////////////
@@ -31,7 +58,39 @@ Table of Contents:
 
 
 /*///////////// 3.1 Header /////////////*/
+header {
+    padding: 50px 100px 150px 100px;
+    background-image: url("assets/images/mountains.jpg");
+    background-size: auto;
+    background-position: center;
+}
 
+header h1 {
+    font-weight: bolder;
+    font-size: 65px;
+}
+
+.container-header {
+    text-align: center;
+    padding: 20px 0px 0px 20px;
+    max-width: 1000px;
+}
+
+.input-header {
+    padding: 10px 20px;
+    border-radius: 30px 0 0 30px;
+    margin: -1px;
+}
+
+form {
+    padding-top: 20px;
+}
+
+.btn-header {
+    padding: 10px 20px;
+    margin: -1px;
+    border-radius: 0 30px 30px 0;
+}
 
 
 /*///////////// 3.2 Testimonial /////////////*/
@@ -47,3 +106,12 @@ Table of Contents:
 
 
 /*///////////// 3.5 Footer /////////////*/
+
+footer {
+    margin-top: 30px;
+    padding: 10px 50px;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    background-color: #2f3636;
+}
