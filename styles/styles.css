@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
 /*grijs #899CA0*/
 /*donkergroen #1C2B32*/
 
@@ -17,30 +19,48 @@ Table of Contents:
         3.4 Faq
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding 0;
-}
 
 
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 main {
     max-width: 1000px;
-    margin: 20px 50px;
+    margin: 20px auto;
 }
 
 button {
     color: #FFF;
-    background-color: black;
+    background-color: #2b2d30;
     border: none;
+    padding: 15px 20px;
+
 }
 
 h2 {
     text-align: center;
-    font-weight: bolder;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a:link {
+    color: #2b2d30;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #2b2d30;
+}
+
+a:hover {
+    color: #2b2d30;
+    text-decoration: none;
 }
 
 /*////////////////////////
@@ -60,7 +80,7 @@ body {
 /*///////////// 3.1 Header /////////////*/
 header {
     padding: 50px 100px 150px 100px;
-    background-image: url("assets/images/mountains.jpg");
+    background-image: url("../assets/images/mountains.jpg");
     background-size: auto;
     background-position: center;
 }
@@ -72,14 +92,24 @@ header h1 {
 
 .container-header {
     text-align: center;
-    padding: 20px 0px 0px 20px;
+    padding: 10px 0 50px 20px;
     max-width: 1000px;
 }
 
+header p {
+    font-weight: 200;
+}
+
 .input-header {
-    padding: 10px 20px;
+    padding: 14px 80px 14px 30px;
     border-radius: 30px 0 0 30px;
+    border: 1px solid black;
     margin: -1px;
+    background-color: transparent;
+}
+
+input::placeholder {
+color: #3b3b3b;
 }
 
 form {
@@ -87,22 +117,77 @@ form {
 }
 
 .btn-header {
-    padding: 10px 20px;
-    margin: -1px;
     border-radius: 0 30px 30px 0;
+    margin: -5px;
 }
 
 
 /*///////////// 3.2 Testimonial /////////////*/
+.container-quote {
+    /*border: 2px solid grey;*/
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.16);
+    border-radius: 20px;
+    margin: 40px;
+    padding: 30px 90px;
+    position: relative;
+}
 
+blockquote, .caption-quote {
+    font-weight: 200;
+}
+
+blockquote {
+    padding: 24px 12px 24px 30px;
+}
+
+.person-quote {
+    display: inline-block;
+}
+
+.img-quote {
+    position: absolute;
+    top: 54px;
+    left: 70px;
+}
+
+.caption-quote {
+    padding-left: 20px;
+    display: inline-block;
+    font-style: italic;
+}
 
 
 /*///////////// 3.3 Support /////////////*/
+.img-support {
+    margin: 20px 40px;
+    border-radius: 20px;
+    width: 900px;
+}
 
+.support p {
+    margin: 0 40px 20px 40px;
+    font-weight: 200;
+}
+
+.btn-contact {
+    margin: 10px 40px;
+    border-radius: 30px;
+}
 
 
 /*///////////// 3.4 Faq /////////////*/
+.container-faq {
+    margin-top: 40px;
+}
 
+.list-faq {
+    margin: 30px 50px;
+}
+
+.li-faq {
+    font-weight: 200;
+    margin: 10px 40px;
+}
 
 
 /*///////////// 3.5 Footer /////////////*/
@@ -113,5 +198,5 @@ footer {
     color: #FFF;
     text-align: center;
     font-size: 12px;
-    background-color: #2f3636;
+    background-color: #2b2d30;
 }
